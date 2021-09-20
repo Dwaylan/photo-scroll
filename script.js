@@ -47,9 +47,13 @@ async function getPhotos() {
 }
 
 // Infitite scroll event listener
-// window.addEventListener("scroll", () => {
-//   if (window.innerHeight + window.)
-// });
+window.addEventListener("scroll", () => {
+  if (
+    window.innerHeight + window.scrollY >=
+    document.body.offsetHeight - 1000
+  ) {
+  }
+});
 
 // on load
 getPhotos();
