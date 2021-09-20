@@ -52,6 +52,8 @@ window.addEventListener("scroll", () => {
     window.innerHeight + window.scrollY >=
     document.body.offsetHeight - 1000
   ) {
+    getPhotos();
+    console.log("load more");
   }
 });
 
